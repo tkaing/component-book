@@ -22,7 +22,8 @@ export default defineConfig({
     plugins: [react()],
     define: {
         'process.env': {
-            NODE_ENV: process.env.NODE_ENV
+            NODE_ENV: process.env.NODE_ENV,
+            SHARED_APP: 'appfront'
         }
     },
     resolve: {

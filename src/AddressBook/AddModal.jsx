@@ -9,7 +9,7 @@ import UplModal from '@/components/UplModal';
 import FormGroup from '@/components/FormGroup';
 import { button } from '@/styles/placeholders/button';
 import useFormValidation from '@/hooks/useFormValidation';
-import { buildInputEvent } from '@/helpers/helper';
+import { buildInputEvent, requestCredentials } from '@/helpers/helper';
 import { greyField, radioGroup } from '@/styles/placeholders/field';
 import { Div, Input, Select, TextArea } from '@/components/base';
 
@@ -83,7 +83,7 @@ export default function AddModal({ open, onClose }) {
             method: 'POST',
             body: JSON.stringify(payload),
             headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-            credentials: 'include'
+            credentials: requestCredentials
         })
             .then(response => response.json())
             .then(result => console.log(result))

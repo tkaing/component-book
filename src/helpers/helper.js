@@ -1,5 +1,7 @@
 export const isProduction = process.env.NODE_ENV === 'production';
 
+export const requestCredentials = isProduction && process.env.SHARED_APP !== 'appfront' ? 'include' : 'same-origin';
+
 const buildFormDataKey = (key, formSubject) => {
     return `${formSubject}[${key}]`;
 };

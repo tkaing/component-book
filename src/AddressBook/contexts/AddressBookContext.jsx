@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useReducer } from 'react';
 
 import contactsJSON from '../contacts.json';
-import { isProduction } from '@/helpers/helper';
+import { isProduction, requestCredentials } from '@/helpers/helper';
 import { initialState, reducer } from './AddressBookReducer';
 
 export const AddressBookContext = createContext({});
@@ -36,17 +36,10 @@ export default function AddressBookProvider({ children }) {
         const baseUrl = 'http://localhost:33000/contacts';
 
         if (isProduction) {
-            const myHeaders = new Headers();
-
-            myHeaders.append('Sec-Fetch-Dest', 'empty');
-            myHeaders.append('Sec-Fetch-Mode', 'cors');
-            myHeaders.append('Sec-Fetch-Site', 'same-origin');
-
             const requestOptions = {
                 method: 'GET',
-                headers: myHeaders,
                 redirect: 'follow',
-                credentials: 'include'
+                credentials: requestCredentials
             };
 
             fetch(`${baseUrl}?${urlQueryParams}`, requestOptions)

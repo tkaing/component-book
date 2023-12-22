@@ -8,7 +8,7 @@ import { Span } from '@/components/base';
 import { label } from '@/styles/placeholders/label';
 import citiesJSON from '@/AddressBook/cities.json';
 import { colors } from '@/styles/settings/variables';
-import { isProduction } from '@/helpers/helper';
+import { isProduction, requestCredentials } from '@/helpers/helper';
 import { autocomplete } from '@/styles/placeholders/field';
 import { AsyncTypeahead } from '@/components/base/override';
 
@@ -31,7 +31,7 @@ const CityAutocomplete = forwardRef(({ countryId, placeholder, onSelectValue }, 
 
         const queryRest = isProduction ? `&country_id=${countryId}` : '+in:login&page=1&per_page=50';
 
-        fetch(`${SEARCH_URI}?q=${query}${queryRest}`, { credentials: 'include' })
+        fetch(`${SEARCH_URI}?q=${query}${queryRest}`, { credentials: requestCredentials })
             .then(resp => resp.json())
             .then(result => {
                 setTerm(query);

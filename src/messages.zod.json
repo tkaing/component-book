@@ -1,0 +1,20 @@
+{
+    "min": "Ce champs est requis",
+    "email": "Ceci doit être une adresse email",
+    "string": {
+        "invalid_type_error": "Ceci n'est pas une chaîne de caractères",
+        "required_error": "Ce champs est requis"
+    },
+    "boolean": {
+        "invalid_type_error": "Ceci n'est pas un booléen",
+        "required_error": "Ce champs est requis"
+    },
+    "regex": {
+        "Sino": "Sinograms characters are not allowed, please use latin alphabet",
+        "Upela": "Ce champs ne peut pas contenir 'upela'",
+        "Cyrillic": "Cyrillic alphabet is not allowed, please use latin alphabet",
+
+        "not_allowed_cyrillic_alphabet": "Cyrillic alphabet is not allowed, please use latin alphabet",
+        "not_allowed_Sinograms_characters": "Sinograms characters are not allowed, please use latin alphabet"
+    }
+}

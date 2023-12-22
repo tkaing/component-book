@@ -1,0 +1,43 @@
+{
+    "page3_modale_addressbook_header_name": "nom",
+    "page3_modale_addressbook_header_company": "société",
+    "page3_modale_addressbook_header_city": "ville",
+    "page3_modale_addressbook_header_country": "pays",
+    "page3_modale_addressbook_header_action": "action",
+
+    "page3_modale_addressbook_table_name": "nom",
+    "page3_modale_addressbook_table_company": "société",
+    "page3_modale_addressbook_table_phone": "téléphone",
+    "page3_modale_addressbook_table_email": "email",
+    "page3_modale_addressbook_table_address1": "adresse 1",
+    "page3_modale_addressbook_table_address2": "adresse 2",
+    "page3_modale_addressbook_table_address3": "adresse 3",
+    "page3_modale_addressbook_table_select_contact": "sélectionner ce contact",
+
+    "page3_modale_addressbook_title": "carnet d'adresse",
+    "page3_modale_addressbook_add_contact": "ajouter un contact",
+
+    "base_results_per_page": "résultats par page",
+    "page_label1": "page",
+    "page_label2": "sur",
+
+    "cs_contacts_add": "Ajouter un contact",
+
+    "contact_form_name_placeholder": "Prénom, Nom",
+    "contact_form_company": "Société",
+    "popup_login_email_placeholder": "Email",
+    "contact_form_address_1_placeholder": "N°, rue, complément",
+    "contact_form_address_2_placeholder": "N°, rue, complément",
+    "contact_form_address_3_placeholder": "N°, rue, complément",
+    "contact_form_zipcode_placeholder": "Code Postal",
+    "contact_form_city_placeholder": "Ville",
+    "contact_form_country_placeholder": "Pays",
+    "cs_contact_ref_placeholder": "Code client",
+    "contact_form_address_infos": "Informations complémentaires",
+
+    "pricer_from_residential": "Particulier",
+    "pricer_from_pro": "Professionnel",
+
+    "cs_contacts_popup_delete_notok": "Annuler",
+    "cs_contacts_validate": "Enregistrer"
+}
